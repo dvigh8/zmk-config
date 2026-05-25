@@ -2,7 +2,7 @@
 // for how to configure this.
 
 / {
-    default_layout: default_layout_0 {
+    default_layout: default_layout {
         compatible = "zmk,physical-layout";
         display-name = "LAYOUT";
 
