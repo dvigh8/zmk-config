@@ -1,0 +1,52 @@
+// This file was generated from a template. Edit it to match your keyboard.
+// See https://zmk.dev/docs/development/hardware-integration/new-shield for more instructions.
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    // Define a default keymap here.
+    // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
+    keymap {
+        compatible = "zmk,keymap";
+
+        dvorak_layer { // layer 0
+            bindings = <
+&tog 1         &kp N1    &kp N2     &kp N3    &kp N4        &kp N5                                          &kp N6    &kp N7    &kp N8      &kp N9     &kp N0    &trans
+&kp TAB        &kp SQT   &kp COMMA  &kp DOT   &kp P         &kp Y                                           &kp F     &kp G     &kp C       &kp R      &kp L     &kp DEL
+&mt LCTRL ESC  &kp A     &kp O      &kp E     &kp U         &kp I                                           &kp D     &kp H     &kp T       &kp N      &kp S     &kp RET
+&kp LSHFT      &kp SEMI  &kp Q      &kp J     &kp K         &kp X    &kp BSPC &kp DEL   &kp RET   &kp SPACE &kp B     &kp M     &kp W       &kp V      &kp Z     &kp RSHFT
+                         &kp LEFT   &kp RIGHT &mt LCTRL ESC &kp LGUI &kp LALT &mo 2     &mo 3     &kp RALT  &kp RGUI  &mt RCTRL ESC &kp UP  &kp DOWN
+            >;
+        };
+
+        qwerty_layer { // layer 1
+            bindings = <
+&trans        &kp N1    &kp N2     &kp N3    &kp N4         &kp N5                                          &kp N6    &kp N7    &kp N8     &kp N9     &kp N0    &trans
+&kp TAB       &kp Q     &kp W      &kp E     &kp R          &kp T                                           &kp Y     &kp U     &kp I      &kp O      &kp P     &kp DEL
+&mt LCTRL ESC &kp A     &kp S      &kp D     &kp F          &kp G                                           &kp H     &kp J     &kp K      &kp L      &kp SEMI  &kp RET
+&kp LSHFT     &kp Z     &kp X      &kp C     &kp V          &kp B    &kp BSPC &kp DEL   &kp RET   &kp SPACE &kp N     &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
+                        &kp LEFT  &kp RIGHT  &mt LCTRL ESC  &kp LGUI &kp LALT &mo 2     &mo 3     &kp RALT  &kp RGUI &mt RCTRL ESC &kp UP  &kp DOWN
+            >;
+        };
+
+        symbols_layer { // layer 2
+            bindings = <
+&bootloader      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR                            &trans    &trans    &trans     &trans     &trans    &trans
+&sys_reset       &trans       &trans       &kp UP       &trans       &trans                                &kp TILDE &kp SEMI  &kp PLUS   &kp QMARK  &kp UNDER &kp PIPE
+&studio_unlock   &trans       &kp LEFT     &kp DOWN     &kp RIGHT    &trans                                &kp GRAVE &kp COLON &kp EQUAL  &kp FSLH   &kp MINUS &kp BSLH
+&trans           &trans       &trans       &trans       &kp LBRC     &kp RBRC  &trans &trans &trans &trans &kp LBKT  &kp RBKT  &kp LPAR   &kp RPAR   &trans    &trans
+                              &trans       &trans       &trans       &trans    &trans &trans &trans &trans &trans    &trans    &trans     &trans
+            >;
+        };
+        numbers_f_layer { // layer 3
+            bindings = <
+&trans    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                              &kp N6    &kp N7    &kp N8     &kp N9     &kp N0    &bootloader
+&trans    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                              &kp N6    &kp N7    &kp N8     &kp N9     &kp N0    &sys_reset
+&kp F1    &kp F2       &kp F3       &kp F4       &kp F5       &kp F6                              &kp DOT   &kp N4    &kp N5     &kp N6     &trans    &out OUT_TOG
+&kp F7    &kp F8       &kp F9       &kp F10      &kp F11      &kp F12 &trans &trans &trans &trans &kp N0    &kp N1    &kp N2     &kp N3     &trans    &trans
+                       &bt BT_PRV   &bt BT_NXT   &trans       &trans  &trans &trans &trans &trans &trans    &trans    &trans     &trans
+                                               >;
+        };
+    };
+};
