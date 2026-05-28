@@ -1,0 +1,16 @@
+if SHIELD_TYRIAN_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Tyrian"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_TYRIAN_LEFT
+
+if SHIELD_TYRIAN_LEFT || SHIELD_TYRIAN_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_TYRIAN_LEFT || SHIELD_TYRIAN_RIGHT

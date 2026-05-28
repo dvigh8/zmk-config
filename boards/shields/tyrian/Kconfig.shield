@@ -1,0 +1,5 @@
+config SHIELD_TYRIAN_LEFT
+    def_bool $(shields_list_contains,tyrian_left)
+
+config SHIELD_TYRIAN_RIGHT
+    def_bool $(shields_list_contains,tyrian_right)

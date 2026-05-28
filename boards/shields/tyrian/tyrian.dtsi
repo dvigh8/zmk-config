@@ -4,7 +4,7 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include "nyx-layouts.dtsi"
+#include "tyrian-layouts.dtsi"
 
 / {
     chosen {
