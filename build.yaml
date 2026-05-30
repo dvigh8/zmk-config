@@ -25,3 +25,11 @@ include:
     artifact-name: tyrian_left_with_studio
   - board: nice_nano_v2
     shield: tyrian_right
+  - board: nice_nano_v2
+    shield: stryx_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: stryx_left_with_studio
+  - board: nice_nano_v2
+    shield: stryx_right
+

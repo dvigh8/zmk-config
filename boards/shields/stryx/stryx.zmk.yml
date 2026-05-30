@@ -1,0 +1,13 @@
+file_format: "1"
+id: stryx
+name: Stryx
+type: shield
+url: https://github.com/zmkfirmware/zmk/
+requires: [pro_micro]
+features:
+  - keys
+  - display
+  - studio
+siblings:
+  - stryx_left
+  - stryx_right
