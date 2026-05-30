@@ -15,12 +15,12 @@
 
         dvorak_layer { // layer 0
             bindings = <
-&tog 1    &kp N1    &kp N2     &kp N3    &kp N4    &kp N5        &kp N6    &kp N7    &kp N8     &kp N9     &kp N0    &trans
-&kp TAB   &kp SQT   &kp COMMA  &kp DOT   &kp P     &kp Y         &kp F     &kp G     &kp C      &kp R      &kp L     &kp DEL
-&kp ESC   &kp A     &kp O      &kp E     &kp U     &kp I         &kp D     &kp H     &kp T      &kp N      &kp S     &kp RET
-&kp LSHFT &kp SEMI  &kp Q      &kp J     &kp K     &kp X         &kp B     &kp M     &kp W      &kp V      &kp Z     &kp RSHFT
-          &kp LEFT  &kp RIGHT  &mt LCTRL ESC &kp BSPC &kp DEL   &kp RET   &kp SPACE &mt RCTRL ESC &kp UP  &kp DOWN
-                               &kp LGUI  &kp LALT  &mo 2         &mo 3     &kp RALT  &kp RGUI
+&tog 1        &kp N1    &kp N2     &kp N3        &kp N4   &kp N5  &kp N6    &kp N7    &kp N8        &kp N9  &kp N0    &trans
+&kp TAB       &kp SQT   &kp COMMA  &kp DOT       &kp P    &kp Y   &kp F     &kp G     &kp C         &kp R   &kp L     &kp DEL
+&mt LCTRL ESC &kp A     &kp O      &kp E         &kp U    &kp I   &kp D     &kp H     &kp T         &kp N   &kp S     &kp RET
+&kp LSHFT     &kp SEMI  &kp Q      &kp J         &kp K    &kp X   &kp B     &kp M     &kp W         &kp V   &kp Z     &kp RSHFT
+              &kp LEFT  &kp RIGHT  &mt LCTRL ESC &kp BSPC &kp DEL &kp RET   &kp SPACE &mt RCTRL ESC &kp UP  &kp DOWN
+                                   &kp LGUI      &kp LALT &mo 2   &mo 3     &kp RALT  &kp RGUI
             >;
         };
 
